@@ -10,11 +10,11 @@ Write-Host Transforming now...
 & $PSet2YamlConverterExe "$SourceFolderXml" "$TargetFolderYaml" "$TargetFolderJson" "$TargetFolderResx "
 if ($LastExitCode -eq '0') 
 { 
- Write-Host "OK: Transformation is successfull" -ForegroundColor Green
+ Write-Host "OK: Transformation is successful" -ForegroundColor Green
 }
 else 
 {
- Write-Host "ERROR: Transformation is not successfull" -ForegroundColor Red
+ Write-Host "ERROR: Transformation is not successful" -ForegroundColor Red
  Write-Host "Please check the errors and correct them. Thanks for your contribution!" -ForegroundColor Red
  $ExitCode=1
 }
